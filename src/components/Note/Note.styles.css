@@ -1,0 +1,21 @@
+.note{
+    background: #fef68a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    padding: 1rem;
+    
+}
+
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.delete-icon{
+    cursor: pointer;
+}

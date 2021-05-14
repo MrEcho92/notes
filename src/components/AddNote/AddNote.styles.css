@@ -1,0 +1,30 @@
+.note.addnote {
+    background: #67d7cc;
+}
+
+.note.addnote textarea{
+    border: none;
+    resize: none;
+    background: #67d7cc;
+}
+
+.note.addnote textarea:focus{
+    outline: none;
+}
+.note-footer-small {
+    font-size: .8rem;
+}
+
+.save{
+    background: #e1e1e1;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+.save:hover{
+    background: whitesmoke;
+    cursor: pointer;
+    border: none;
+}

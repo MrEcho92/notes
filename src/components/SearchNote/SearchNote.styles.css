@@ -1,0 +1,26 @@
+.search{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 0px 8px 0px 8px;
+}
+
+.search input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.darkmode .search-icon{
+    color: #fff;
+}

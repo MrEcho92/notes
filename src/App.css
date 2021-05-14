@@ -1,0 +1,26 @@
+.App{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.darkmode {
+    background: black;
+    height: 100vh;
+}
+.darkmode .header h1{
+    color: whitesmoke;
+}
+.darkmode .header-icon{
+    color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
