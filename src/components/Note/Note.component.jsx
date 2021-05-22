@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import {AiTwotoneDelete} from 'react-icons/ai';
 import './Note.styles.css';
+import { MyContext } from '../../App.js';
 
-function Note({id, text, date, deleteNote }){
+function Note({id, text, date}){
+    const {deleteNote} = useContext(MyContext);
     return (
         <div className='note'>
             <p>{text}</p>

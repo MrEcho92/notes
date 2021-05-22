@@ -4,7 +4,10 @@ import "./App.css";
 import NoteList from "./components/NoteList/NoteList.component";
 import SearchNote from "./components/SearchNote/SearchNote.component";
 
-function App() {
+export const MyContext = React.createContext({})
+
+export function App() {
+
   const [notes, setNotes] = useState([]);
 
   const [searchText, setsearchText] = useState("");
@@ -62,16 +65,18 @@ function App() {
           </button>
         </div>
         <SearchNote handleSearch={handleSearch} />
-        <NoteList
-          notes={notes.filter(({ text }) =>
-            text.toLowerCase().includes(searchText)
-          )}
-          handleAddNote={handleAddNote}
-          deleteNote={deleteNote}
-        />
+        <MyContext.Provider value={{handleAddNote, deleteNote}}>
+          <NoteList
+            notes={notes.filter(({ text }) =>
+              text.toLowerCase().includes(searchText)
+            )}
+            // handleAddNote={handleAddNote}
+            // deleteNote={deleteNote}
+          />
+        </MyContext.Provider>
       </div>
     </div>
   );
 }
 
-export default App;
+

@@ -10,6 +10,12 @@
     background: black;
     height: 100vh;
 }
+
+@media screen and (max-width:400px){
+    .darkmode{
+        height: 100%;
+    }
+}
 .darkmode .header h1{
     color: whitesmoke;
 }

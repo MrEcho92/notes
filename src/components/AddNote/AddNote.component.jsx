@@ -1,7 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import './AddNote.styles.css';
+import { MyContext } from '../../App.js';
 
-function AddNote({handleAddNote}) {
+
+
+function AddNote() {
+  const {handleAddNote} = useContext(MyContext);
 
   const letterMax = 200;
   

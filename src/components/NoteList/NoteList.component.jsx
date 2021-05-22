@@ -4,13 +4,13 @@ import AddNote from '../AddNote/AddNote.component';
 import { nanoid } from "nanoid";
 import "./NoteList.styles.css";
 
-function NoteList({ notes, handleAddNote, deleteNote }) {
+function NoteList({ notes }) {
   return (
     <div className="note-list">
       {notes.map(({...otherprops}) => (
-        <Note key={nanoid()} {...otherprops} deleteNote={deleteNote} />
+        <Note key={nanoid()} {...otherprops}/>
       ))}
-      <AddNote handleAddNote={handleAddNote}/>
+      <AddNote/>
     </div>
   );
 }
